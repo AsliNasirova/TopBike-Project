@@ -1,0 +1,18 @@
+.navbar{
+    z-index: 1;
+    width: 100%;
+   height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 30px;
+
+a{
+  color: rgb(39, 81, 81);  
+}
+
+    .switchs{
+        display: flex;
+        gap: 40px;
+    }
+}

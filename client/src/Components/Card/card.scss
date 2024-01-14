@@ -1,0 +1,48 @@
+.cardArea{
+    .cardIcon{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 26px;
+        .heart{
+            &:hover{
+                color: brown;
+                
+                transition: 0.3s;
+            }
+        }
+        .eye{
+            color: black;
+            &:hover{
+                color: orange;
+                transition: 0.3s;
+                
+            }
+        }
+        .basket{
+            &:hover{
+                color: orange;
+                transition: 0.6s;
+                
+            }
+        }
+
+    }
+    .imageCard{
+        img{
+            width: 100%;
+        }
+    }
+    .cardContent{
+        h1{
+            font-size: 30px;
+            &:hover{
+                color: orange;
+                transition: 0.6s;
+            }
+        }
+        h2{
+            color: orange;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+#newProduct {
+    width: 100%;
+    margin-top: 30px;
+
+    .newProductArea {
+        .titleProduct {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            align-items: center;
+        }
+
+        .cardAreaproduct {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+    }
+}

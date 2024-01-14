@@ -1,0 +1,55 @@
+#Footer {
+    background-color: #f4f4f4;
+   min-width: 100%;
+   margin-top: 34px;
+    .FooterArea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:100% ;
+        gap: 150px;
+
+        .FooterOne {
+            margin-top: 30px;
+            img {
+                width: 200px;
+            }
+            p{
+                font-size: 18px;
+            }
+            .FooterIcons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                font-size: 28px;
+                .FaTwitter{
+                    &:hover{
+                        color: orange;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+
+        .FooterTwo {
+            h2{
+                border-bottom: 1px solid black;
+            }
+            ul{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            li{
+               
+                list-style: none;
+                font-size: 20px;
+                margin-top: 20px;
+                &:hover{
+                    color: orange;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
