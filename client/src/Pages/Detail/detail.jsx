@@ -15,6 +15,7 @@ const Detail = () => {
   },[])
   return (
     <>
+   
   <div className="detailArea">
     {
       detail ? <>

@@ -5,9 +5,16 @@ import NewProduct from '../../Components/NewProduct/newProduct'
 import Only from '../../Components/OnlyOnline'
 import Services from '../../Components/ServicesHome'
 import Shopify from '../../Components/Shopify/shopify'
+import { Helmet } from 'react-helmet-async'
 
 function Home() {
   return (
+    <>
+   <Helmet>
+    <title>
+      Home Page
+    </title>
+   </Helmet>
     <div>
       <Headerr/>
       <Services />
@@ -17,6 +24,7 @@ function Home() {
       <LatestNews />
 
     </div>
+     </>
   )
 }
 

@@ -6,17 +6,18 @@ const Wishlist = () => {
   const {wish,deleteWish}=useContext(WishlistContext)
   return (
     <>
-  
+  <div className="wishlistArea">
     {
       wish && wish.map(x=>
         <ul>
         <li><img src={x.image}alt="" /></li>
         <li>{x.title}</li>
         <li>{x.price}</li>
-        <li onClick={()=>deleteWish(x)}>Delete</li>
+        <button className='delete_btn'><li onClick={()=>deleteWish(x)}>Delete</li></button>
         </ul>
         )
     }
+    </div>
     </>
   )
 }

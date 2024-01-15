@@ -1,9 +1,16 @@
 import React from 'react'
 import NewProduct from '../../Components/NewProduct/newProduct'
 import "./shop.scss"
+import { Helmet } from 'react-helmet-async'
 
 const ShopPage = () => {
   return (
+    <>
+    <Helmet>
+      <title>
+        Shop Page
+      </title>
+    </Helmet>
     <div>
       
       <section id='doubleimages'>
@@ -26,6 +33,7 @@ const ShopPage = () => {
      
      <NewProduct/>
     </div>
+    </>
   )
 }
 
