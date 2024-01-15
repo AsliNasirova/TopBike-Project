@@ -3,12 +3,34 @@
     justify-content: center;
     align-items: center;
 
-    img {
-        width: 300px;
-    }
+    .text_wishlist {
+       text-align: center;
 
-    .delete_btn{
-        font-size: 20px;
-        background-color: #F3D7CA;
+       .dollar_wishlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       }
+       
+
+        img {
+            width: 300px;
+        }
+
+        .delete_btn {
+            border: 1px solid gray;
+            width: 100px;
+            height: 30px;
+            background-color: #BB9CC0;
+
+            &:hover {
+                color: white;
+                font-size: 14px;
+                transition: 0.6s;
+                background-color: #67729D;
+            }
+        }
     }
 }

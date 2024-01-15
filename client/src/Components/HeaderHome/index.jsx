@@ -1,25 +1,41 @@
-import React from 'react'
-import './index.scss'
 
-const Headerr = () => {
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+
+
+
+import { Navigation } from 'swiper/modules';
+
+export default function Header() {
   return (
-    <section id='header'>
-   
-   <div id='header-section'>
-       <div className="road">
-        <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294" alt="" />
-        <div className="content-tit">
-          <h3>Off Road Bicycle</h3>
-          <p>Here to bring your life style to the next level.</p>
-          <div className="butonn">
-          SHOP NOW
+    <>
+      <Swiper navigation={true} 
+      slidesPerView={1}
+      spaceBetween={30}
+      modules={[Navigation]} className="mySwiper">
+        <SwiperSlide>
+          <div className="header_container">
+            <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_4.jpg?v=1613575294" alt="" />
+            <div className="headerText">
+              
+            </div>
           </div>
-        </div>
-       </div>
-      
-    </div>
-    </section>
-  )
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="header_container">
+            <img src="https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_3.jpg?v=1613575289" alt="" />
+            <div className="headerText">
+              
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
 }
 
-export default Headerr

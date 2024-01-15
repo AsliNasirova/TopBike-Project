@@ -1,0 +1,42 @@
+.basketArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 300px;
+    }
+
+    .text_basket {
+
+        .deleteBasket_btn {
+            background-color: #86A789;
+            width: 100px;
+            height: 30px;
+            border: 1px solid gray;
+
+            &:hover {
+                transition: 0.6s;
+                background-color: #739072;
+                color: white;
+                font-size: 13px;
+            }
+        }
+
+        .countPart_basket {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .inreaseDecrease_btn {
+
+                border: none;
+                font-size: 20px;
+                background-color: white;
+            }
+        }
+    }
+}

@@ -19,10 +19,12 @@ function Navbar() {
             <li><NavLink to={"/contact"}>Contact</NavLink></li>
             <li><NavLink to={"/shop"}>Shop</NavLink></li>
             <li><NavLink to={"/wishlist"}><CiHeart /></NavLink></li>
+            <li><NavLink to={"/basket"}>  <CiShoppingBasket /></NavLink></li>
+            <li><NavLink to={"/search"}>  <CiSearch /> </NavLink></li>
 
           </ul>
-          <CiSearch />
-          <CiShoppingBasket />
+         
+        
         </div>
       </div>
     </nav>
